@@ -1,0 +1,45 @@
+//Create
+POST http://localhost:5000/attributes HTTP/1.1
+content-type: application/json
+
+{
+    "name": "color",
+    "value": "black"
+}
+
+###
+
+//Get all
+GET http://localhost:5000/attributes HTTP/1.1
+
+###
+
+//Get by id
+GET http://localhost:5000/attributes/1 HTTP/1.1
+
+###
+
+
+//Delete by id
+DELETE  http://localhost:5000/attributes/1 HTTP/1.1
+
+###
+
+//Update by id
+PATCH   http://localhost:5000/attributes/2 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "color",
+    "value": "pink"
+}
+###
+
+PATCH   http://localhost:5000/attributes/addAttributeToProduct/2/2 HTTP/1.1
+content-type: application/json
+
+{
+
+}
+
+###

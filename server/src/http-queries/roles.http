@@ -1,0 +1,13 @@
+//Create
+POST http://localhost:5000/roles HTTP/1.1
+content-type: application/json
+
+{
+    "value": "ADMIN",
+    "description": "Very important role"
+}
+
+###
+
+//Get by value
+GET http://localhost:5000/roles/USER HTTP/1.1

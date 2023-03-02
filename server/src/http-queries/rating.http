@@ -1,0 +1,22 @@
+//Create
+POST http://localhost:5000/ratings HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlbmRlcjY3OTUxQWRtaW4yMTIxMjEyQGdtYWlsLmNvbSIsImlkIjoyNSwicm9sZXMiOlt7ImlkIjoxLCJ2YWx1ZSI6IlVTRVIiLCJkZXNjcmlwdGlvbiI6IlZlcnkgaW1wb3J0YW50IHJvbGUiLCJjcmVhdGVkQXQiOiIyMDIyLTA5LTE2VDA5OjA0OjQ1LjI2NloiLCJ1cGRhdGVkQXQiOiIyMDIyLTA5LTE2VDA5OjA0OjQ1LjI2NloiLCJVc2VyUm9sZXMiOnsiaWQiOjQsInJvbGVJZCI6MSwidXNlcklkIjoyNX19XSwiaWF0IjoxNjYzNjcxNzU0LCJleHAiOjE2NjM3NTgxNTR9.dRsBJ_1jdncGLeYWN2kFe7_pjETMGJo342aqXzJq9Hw
+
+
+{
+    "productId": 2,
+    "value": 12
+}
+
+###
+
+//Get all
+GET http://localhost:5000/ratings HTTP/1.1
+
+###
+
+//Get all
+GET http://localhost:5000/ratings/product/2 HTTP/1.1
+
+###
